@@ -45,7 +45,7 @@ Vue.config.productionTip = false
 
 Vue.use(VueGoogleMaps, {
   load: {
-    key: 'AWzaSyC13JVX4Fa8C2mqaI42QhxqSIONruP0z9A', /* this numer is your key from Google you just got */
+    key: 'USE YOUR OWN GOOGLE MAP API KEY', /* this numer is your key from Google you just got */
     libraries: 'places',
   }
 })
@@ -154,5 +154,33 @@ $ `npm run serve`
 
 ### Next LoveLA meeting
 + June 9th
+
+Some goals for Saturday 6/9/2018  meeting 
+
+some ideas on how we can make the 
+traveling route to work 
+http://geekonjava.blogspot.com/2016/05/demo-animated-moving-marker-on-google.html
+
+Rails back end 
+
+1 - Create API Rest end point 
+    GET to retrieve GPS points to draw markers on Gmap vue 
+	json object should look like :
+	{position: {lat: 10.0, lng: 10.0}}
+	
+2 - create on the db backend a table of gps points with lat and long entries 
+
+3 - lets focus on one of the metro lines , maybe the red line ? 
+     - do we have a pic of every station along the route ? 
+     - do we have the gps locations of every station  ? 
+     - we will need a table on our end to keep that info 
+	 
+
+Vue side 
+
+2 - Implement Axio ( http resources on the current code )
+    to use the rails backend API 
+	
+---
 + June 30th
 
